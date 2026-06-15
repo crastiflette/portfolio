@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romain Sinica</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23081120'/%3E%3Crect x='31' y='10' width='2' height='44' rx='1' fill='%238FA3B8' opacity='0.35'/%3E%3Crect x='27' y='20' width='10' height='24' rx='5' fill='%23FFB347'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Dorsale + suivi de scroll -->
+<aside class="dorsale" aria-label="Progression dans la page">
+  <ul class="ticks">
+    <li><a class="tick" href="#haut" data-section="haut">En tête</a></li>
+    <li><a class="tick" href="#apropos" data-section="apropos">À propos</a></li>
+    <li><a class="tick" href="#projets" data-section="projets">Projets</a></li>
+    <li><a class="tick" href="#competences" data-section="competences">Compétences</a></li>
+    <li><a class="tick" href="#contact" data-section="contact">Contact</a></li>
+  </ul>
+  <span class="impulsion" aria-hidden="true"></span>
+  <span class="curseur" aria-hidden="true">
+    <span class="cur-section">En tête</span>
+  </span>
+</aside>
+
+<div class="barre-progress" aria-hidden="true"></div>
+
+<nav class="top">
+  <div class="gaine">
+    <a class="logo" href="#haut">RS<span>.</span></a>
+    <ul>
+      <li><a href="#apropos" data-section="apropos">À propos</a></li>
+      <li><a href="#projets" data-section="projets">Projets</a></li>
+      <li><a href="#competences" data-section="competences">Compétences</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="haut">
+  <svg class="bathy" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M-50,180 C300,120 700,240 1000,170 S1400,90 1500,150"/>
+    <path d="M-50,300 C320,230 680,360 1010,280 S1390,200 1500,270"/>
+    <path d="M-50,430 C340,350 660,490 1020,400 S1380,320 1500,400"/>
+    <path d="M-50,570 C360,480 640,630 1030,530 S1370,450 1500,540"/>
+    <path d="M-50,710 C380,610 620,770 1040,660 S1360,580 1500,680"/>
+  </svg>
+
+  <div class="gaine">
+    <p class="hero-coord">
+      <span>43.23° N — 5.44° E</span>
+      <span>Marseille Luminy, FR</span>
+    </p>
+    <h1>
+      <span class="trait">Romain</span>
+      <span class="plein">Sinica</span>
+    </h1>
+    <p class="hero-sous">
+      Étudiant en BUT Réseaux &amp; Télécommunications, option Cybersécurité — IUT d'Aix-Marseille.
+      Actuellement en stage chez Orange, équipe IAP Sud-Est.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-signal" href="#projets">Voir les projets</a>
+      <a class="btn btn-trait" href="#contact">Me contacter</a>
+    </div>
+  </div>
+
+  <svg class="cable-hero" viewBox="0 0 1440 160" aria-hidden="true">
+    <path id="trace-cable" class="gaine-c" d="M-20,120 C260,40 520,150 760,80 S1180,30 1460,100"/>
+    <circle r="2.5" fill="#FFB347">
+      <animateMotion dur="9s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#trace-cable"/>
+      </animateMotion>
+    </circle>
+    <circle r="1.8" fill="#FFB347" opacity=".6">
+      <animateMotion dur="9s" begin="4.5s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#trace-cable"/>
+      </animateMotion>
+    </circle>
+  </svg>
+</header>
+
+<!-- À propos -->
+<section id="apropos">
+  <div class="gaine reveal">
+    <p class="repere">À propos</p>
+    <div class="manifeste">
+      <div class="grand">
+        <p>
+          Étudiant en deuxième année de BUT Réseaux &amp; Télécommunications,
+          option Cybersécurité, à l'IUT d'Aix-Marseille. Je me spécialise dans
+          la sécurité des systèmes et l'administration d'infrastructures.
+        </p>
+        <p class="secondaire">
+          En complément de la formation, je conduis des projets personnels
+          d'auto-hébergement et suis certifié Cisco et Stormshield.
+          J'effectue actuellement mon stage chez Orange, au sein de l'équipe
+          Ingénierie, Approvisionnement et Planification de la région Sud-Est,
+          sur un outil de pilotage du déploiement mobile.
+        </p>
+      </div>
+      <div class="colonne-droite">
+        <figure class="portrait">
+          <figcaption class="portrait-titre">
+            <span>Portrait</span>
+            <span class="ref">RS · 2026</span>
+          </figcaption>
+          <div class="portrait-cadre">
+            <img src="photo.jpg" alt="Romain Sinica" class="portrait-img">
+          </div>
+        </figure>
+
+        <div class="fiche" role="table" aria-label="Fiche signalétique">
+        <div class="fiche-titre">Fiche signalétique</div>
+        <dl>
+          <div><dt>Formation</dt><dd>BUT R&amp;T — Cybersécurité</dd></div>
+          <div><dt>Promotion</dt><dd>2024 — 2027</dd></div>
+          <div><dt>École</dt><dd>IUT Aix-Marseille</dd></div>
+          <div><dt>Stage</dt><dd>Orange — IAP Sud-Est</dd></div>
+          <div><dt>Origine</dt><dd>La Ciotat (13)</dd></div>
+          <div><dt>Réponse</dt><dd>&lt; 24&#8201;h</dd></div>
+        </dl>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projets -->
+<section id="projets">
+  <div class="gaine reveal">
+    <p class="repere">Projets</p>
+    <h2>Sélection<br>de projets</h2>
+    <div class="noeuds">
+      <article class="noeud">
+        <div class="noeud-tete"><span class="id">N°01</span><span class="etat">En cours</span></div>
+        <h3>Outil OPTEO — Orange</h3>
+        <p class="lieu">Stage · IAP Sud-Est · 2026</p>
+        <p>Optimisation du portail de pilotage du déploiement mobile.
+        Modélisation de la timeline de production d'un site, refonte d'un
+        module destiné aux planificateurs et automatisation du croisement
+        des données internes pour la fiabilité des tableaux de bord.</p>
+        <div class="tags"><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>GitLab CI/CD</span><span>Docker</span></div>
+      </article>
+      <article class="noeud">
+        <div class="noeud-tete"><span class="id">N°02</span><span class="etat archive">Validé</span></div>
+        <h3>Administration DHCP centralisée</h3>
+        <p class="lieu">Projet tutoré · IUT R&amp;T · 2025</p>
+        <p>Solution d'administration de serveurs DHCP pour le réseau d'une
+        petite entreprise. Scripts Python (Fabric) pour l'ajout, la suppression
+        et la supervision des clients à distance via SSH, sur un réseau virtuel
+        complet sous Linux.</p>
+        <div class="tags"><span>Python</span><span>Fabric</span><span>Linux</span><span>DHCP</span><span>SSH</span></div>
+      </article>
+      <article class="noeud">
+        <div class="noeud-tete"><span class="id">N°03</span><span class="etat archive">Validé</span></div>
+        <h3>Capture The Flag — cybersécurité</h3>
+        <p class="lieu">SAE Cybersécurité · IUT R&amp;T · 2024</p>
+        <p>Découverte et exploitation de vulnérabilités sur Kali Linux :
+        cartographie réseau via Nmap, injection SQL et tests web via Burp Suite,
+        évaluation de la robustesse des authentifications et étude des
+        mécanismes de persistance.</p>
+        <div class="tags"><span>Kali Linux</span><span>Nmap</span><span>Burp Suite</span><span>SQLi</span></div>
+      </article>
+      <article class="noeud">
+        <div class="noeud-tete"><span class="id">N°04</span><span class="etat">En ligne</span></div>
+        <h3>Serveur multimédia auto-hébergé</h3>
+        <p class="lieu">Projet personnel · 2024 →</p>
+        <p>Serveur domestique installé sur un ordinateur portable reconverti :
+        médiathèque en streaming, gestion à distance et exposition sécurisée
+        via tunnel chiffré, sans ouverture de port sur le réseau local.</p>
+        <div class="tags"><span>Ubuntu Server</span><span>CasaOS</span><span>Jellyfin</span><span>Cloudflare Tunnels</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Compétences -->
+<section id="competences">
+  <div class="gaine reveal">
+    <p class="repere">Compétences</p>
+    <h2>Compétences<br>techniques</h2>
+    <div class="baie">
+      <div class="baie-tete">
+        <span class="vis">⊕</span>
+        <span>Panneau 16 ports — Rack 19″</span>
+        <span class="vis">⊕</span>
+      </div>
+      <div class="panneau">
+        <div class="port actif"><span class="num">P01</span><span class="jack"></span><span class="nom">Cybersécurité</span><span class="detail">Option BUT R&amp;T</span></div>
+        <div class="port actif"><span class="num">P02</span><span class="jack"></span><span class="nom">Sécurité réseau</span><span class="detail">Audit, scan, durcissement</span></div>
+        <div class="port actif"><span class="num">P03</span><span class="jack"></span><span class="nom">Cryptographie</span><span class="detail">TLS, hachage, clés</span></div>
+        <div class="port actif"><span class="num">P04</span><span class="jack"></span><span class="nom">Réseaux</span><span class="detail">TCP/IP, routage, VLAN</span></div>
+        <div class="port actif"><span class="num">P05</span><span class="jack"></span><span class="nom">Linux</span><span class="detail">Kali, Arch, Ubuntu Server</span></div>
+        <div class="port actif"><span class="num">P06</span><span class="jack"></span><span class="nom">Python</span><span class="detail">Fabric, scripts</span></div>
+        <div class="port actif"><span class="num">P07</span><span class="jack"></span><span class="nom">SQL</span><span class="detail">MySQL, MariaDB</span></div>
+        <div class="port actif"><span class="num">P08</span><span class="jack"></span><span class="nom">Nmap</span><span class="detail">Cartographie réseau</span></div>
+        <div class="port actif"><span class="num">P09</span><span class="jack"></span><span class="nom">PHP</span><span class="detail">MVC, API</span></div>
+        <div class="port actif"><span class="num">P10</span><span class="jack"></span><span class="nom">JavaScript</span><span class="detail">Front, Node.js</span></div>
+        <div class="port actif"><span class="num">P11</span><span class="jack"></span><span class="nom">Git / GitLab</span><span class="detail">Versionnage, CI/CD</span></div>
+        <div class="port actif"><span class="num">P12</span><span class="jack"></span><span class="nom">Docker</span><span class="detail">Conteneurs, Artifactory</span></div>
+        <div class="port actif"><span class="num">P13</span><span class="jack"></span><span class="nom">DBeaver</span><span class="detail">Modélisation, requêtes</span></div>
+        <div class="port actif"><span class="num">P14</span><span class="jack"></span><span class="nom">Cisco</span><span class="detail">Certifié</span></div>
+        <div class="port actif"><span class="num">P15</span><span class="jack"></span><span class="nom">Stormshield</span><span class="detail">Certifié</span></div>
+        <div class="port"><span class="num">P16</span><span class="jack"></span><span class="nom">Teams</span><span class="detail">En cours d'apprentisage</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <div class="gaine reveal">
+    <p class="repere">Contact</p>
+    <h2>Prendre<br>contact</h2>
+    <a class="grand-lien" href="mailto:romain@sinica.fr">romain@sinica.fr</a>
+    <div class="canaux">
+      <a href="https://www.linkedin.com/in/romain-sinica-631245312/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/crastiflette/" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="tel:+33766845501">07 66 84 55 01</a>
+      <a href="#">CV.pdf ↓</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="gaine">
+    <span>© 2026 Romain Sinica</span>
+    <span>Marseille / La Ciotat</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
